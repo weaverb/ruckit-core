@@ -1,0 +1,7 @@
+version: '2'
+
+services:
+  ruckit_core.web:
+    image: bsweaver/ruckit_core
+    ports:
+      - "5000:5000"

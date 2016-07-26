@@ -1,0 +1,11 @@
+version: '2'
+
+services:
+  ruckit_core.web:
+    image: bsweaver/ruckit_core:Debug
+    environment:
+      - REMOTE_DEBUGGING=${REMOTE_DEBUGGING}
+    ports:
+      - "5000:5000"
+    volumes:
+      - .:/app
